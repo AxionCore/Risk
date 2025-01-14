@@ -19,6 +19,8 @@ from devgagan.modules import ALL_MODULES
 from devgagan.core.mongo.plans_db import check_and_remove_expired_users
 from aiojobs import create_scheduler
 import pyrogram.utils
+import gc
+
 
 pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 # ----------------------------Bot-Start---------------------------- #
