@@ -18,7 +18,9 @@ from pyrogram import idle
 from devgagan.modules import ALL_MODULES
 from devgagan.core.mongo.plans_db import check_and_remove_expired_users
 from aiojobs import create_scheduler
+import pyrogram.utils
 
+pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 # ----------------------------Bot-Start---------------------------- #
 
 loop = asyncio.get_event_loop()
